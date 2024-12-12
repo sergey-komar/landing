@@ -1,0 +1,110 @@
+.header-lend {
+    min-height: 1200px;
+    background: url('../images/header-bg.jpg') no-repeat;
+}
+.header-lend__inner {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-lend__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.menu-lend__list li a{
+    font-size: 18px;
+}
+.menu-lend__list--active {
+    color: #47a1ff;
+    font-weight: 700;
+}
+.header-lend__btn {
+    padding: 0;
+    width: 161px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #22294f;
+    border: none;
+    border-radius: 100px;
+    background: #f5faff;
+}
+.header-lend__btn:hover{
+    background: #ffe03a;
+    transition: all .4s ease-in;
+}
+.header-lend__social{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.header-lend__icon-inst,
+.header-lend__icon-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+}
+.header-lend__icon-inst {
+    background: #ad81f6;
+}
+.header-lend__icon-phone {
+    background: #1084fd;
+}
+.header-lend__phone {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.header-block {
+    display: flex;
+    margin-top: 90px;
+}
+.header-block__img {
+    position: relative;
+}
+.header-block__content {
+    max-width: 58rem;
+    transform: translateY(35px);
+}
+.header-block__img::before{
+    position: absolute;
+    content: '';
+    width: 270px;
+    height: 230px;
+    background: url('../images/header-cloud.png') no-repeat;
+    top: -65px;
+    left: 0;
+}
+.header-block__content-title {
+    margin-bottom: 4rem;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.header-block__content-title span{
+    color: #ffe03a;
+}
+.header-block__content-text {
+    margin-bottom: 3rem;
+    margin-left: 90px;
+    max-width: 37rem;
+    font-size: 2.4rem;
+}
+.header-block__content-btn {
+    margin-left: 90px;
+    width: 310px;
+    height: 72px;
+    line-height: 72px;
+}
+.header-block__content-btn::after{
+   top: 17px;
+   right: 5px;
+}

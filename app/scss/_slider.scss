@@ -1,0 +1,21 @@
+.full-slider__arrows{
+    display: flex;
+    gap: 5px;
+}
+.full .slick-prev,
+.full .slick-next{
+    padding: 0;
+    font-size: 0;
+    border: none;
+}
+.full .slick-prev,
+.full .slick-next{
+    width: 60px;
+    height: 60px;  
+}
+.full .slick-prev{
+    background: url('../images/slider-full-arrow-left.png') no-repeat;
+}
+.full .slick-next{
+    background: url('../images/slider-full-arrow-right.png') no-repeat;
+}

@@ -1,5 +1,6 @@
 .card {
     padding: 50px 0 150px 0;
+    overflow-x: hidden;
 }
 .card-top {
     margin-bottom: 7rem;
@@ -301,7 +302,7 @@
     padding: 20px;
     width: calc(100% / 4 - 5px);
     height: 415px;
-    border-radius: 20px;
+    border-radius: 40px;
     background-repeat: no-repeat;
 }
 .child-block__item-title {
@@ -399,6 +400,7 @@
     margin-top: -190px;
     background: url('../images/slider-bg.png') no-repeat;
     background-size: cover;
+   
 }
 .full__title {
     position: relative;
@@ -467,6 +469,7 @@
 // Reimagine
 .family{
     padding-top: 19rem;
+    overflow-x: hidden;
 }
 .family-box {
     margin-bottom: 4rem;
@@ -491,19 +494,22 @@
     color: #2c3359
 }
 .family__title {
-    display: flex;
-    gap: 10px;
-    font-size: 12rem;
-    line-height: 1.1;
-    color: #eef4fa;
-    font-weight: 700;
-    animation: ticker 8s infinite linear;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .family__title span{
-    flex-shrink: 0;
-    white-space: nowrap;
+    display: inline-block;
+    font-size: 15rem;
+    color: #eef4fa;
+    font-weight: 700;
+    padding-left: 100%;
+    -webkit-animation: scroll 9s infinite linear;
+    -moz-animation: scroll 9s infinite linear;
+    animation: scroll 9s infinite linear;
 }
-@keyframes ticker {
+@keyframes scroll {
     0%{
       transform: translate(0, 0);
     }
@@ -527,3 +533,342 @@
     width: 100%;
     margin: 0 auto;
 }
+
+
+//GOOD
+.good {
+    padding: 14rem 0;
+    background: url('../images/good-bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.good__title {
+    position: relative;
+    margin-bottom: 5rem;
+    font-size: 13rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+.good__title::after{
+    position: absolute;
+    content: '';
+    width: 170px;
+    height: 170px;
+    background: url('../images/icon/good-samolet.svg') no-repeat;
+    background-position: center;
+    right: 0;
+    top: -180px;
+}
+.good-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.good-block__item {
+    width: calc(100% / 3 - 5px);
+    background-color: #fff;
+    border-radius: 40px;
+}
+.good-block__item-img {
+   margin-bottom: 20px;
+}
+.good-block__item-img img{
+    width: 100%;
+    border-radius: 40px;
+}
+.good-block__item-title {
+    margin-bottom: 10px;
+    padding-left: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #2c3359;
+}
+.good-block__item-text {
+    padding: 0 1rem 3rem 4rem;
+    color: #2c3359;
+}
+
+
+// Book Your Fun
+.quick{
+    padding: 14rem 0;
+    background: url('../images/quick-bg.jpg') no-repeat;
+    background-size: cover;
+}
+.quick__title {
+    margin-bottom: 35px;
+    font-size: 13rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.quick-box {
+    margin-bottom: 6.5rem;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+}
+.quick-box__text {
+    font-size: 24px;
+    color: #2c3359;
+}
+.quick-box__btn {
+    max-width: 310px;
+    width: 100%;
+}
+.quick-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 20px;
+}
+.quick-block__item {
+    width: calc(100% / 3 - 5px);
+    background-color: #fff;
+    border-radius: 53px;
+}
+.quick-block__item:last-child{
+    position: relative;
+}
+.quick-block__item:last-child::before{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 145px;
+    background: url('../images/quick-text.png') no-repeat;
+    background-position: center;
+    left:  50%;
+    transform: translateX(-50%);
+    top: -130px;
+}
+.quick-block__item__img {
+    margin-bottom: 20px;
+}
+.quick-block__item__img img{
+    border-radius: 40px;
+    width: 100%;
+}
+.quick-block__item-text {
+    padding: 0 0 2rem 4rem;
+    font-weight: 700;
+    color: #2c3359;
+}
+
+//parents
+.parents {
+    padding: 17rem 0;
+    background: url('../images/parents-bg.png') no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    background-position: center;
+}
+.parents__title {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 7.4rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #2c3359;
+}
+.parents__title::after{
+    position: absolute;
+    content: '';
+    width: 680px;
+    height: 650px;
+    background: url('../images/parents-heart.png') no-repeat;
+    top: 50px;
+    right: -120px;
+}
+.parents-box {
+    position: relative;
+    margin-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.parents-box__text {
+    max-width: 81rem;
+    font-size: 2.4rem;
+    color: #2c3359;
+}
+.parents__arrows {
+    display: flex;
+    gap: 5px;
+}
+.parents-slider__wrapper {
+   width: 315px !important;
+   margin: 0 10px 0 10px;
+}
+.parents-slider__item {
+    width: 315px;
+    margin: 0 10px 0 10px;
+}
+.parents-slider .slick-slide div,
+.parents-slider .slick-slide {
+    width: 315px !important;
+    margin: 0 10px 0 10px;
+}
+
+
+
+//questions
+.questions{
+    padding: 19rem 0 15rem 0;
+    overflow-x: hidden;
+}
+.questions-top__title {
+    max-width: 84rem;
+    position: relative;
+    margin-bottom: 5rem;
+    font-size: 7.4rem;
+    line-height: 1.1;
+    color: #2c3359;
+    z-index: 2;
+}
+.questions-box {
+    position: relative;
+    padding: 7rem;
+    border-radius: 60px;
+    background-color: #52c8fa;
+}
+.questions-box::after{
+    position: absolute;
+    content: '';
+    width: 770px;
+    height: 470px;
+    background-image: url('../images/icon/questions-vector.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    top: -75%;
+    z-index: -1;
+}
+.questions-accardion {
+    max-width: 65rem;
+}
+.questions__wrapper {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.questions__wrapper:last-child{
+    margin-bottom: 0;
+}
+.questions-accardion__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.questions-accardion__title {
+    font-weight: 700;
+    color: #2c3359;
+}
+.questions-accardion__circle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #1084fd;;
+}
+.questions-accardion__circle::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.questions-accardion__circle::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in;
+}
+.questions-accardion__btn.btn-active .questions-accardion__circle::before{
+    display: none;
+    transition: all .5s ease-in;
+}
+.questions-accardion__btn.btn-active .questions-accardion__circle{
+    background-color: #a682d4;
+}
+.questions-accardion__content {
+    display: none;
+    padding-top: 10px;
+}
+.questions-accardion__text {
+    font-size: 18px;
+    color: #7a7f98;
+}
+.questions-top__img {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    z-index: 1;
+}
+
+
+//map
+.map {
+    position: relative;
+    height: 68rem;
+}
+.map iframe{
+    height: 68rem;
+}
+.map-contact {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 44rem;
+    padding: 25px;
+    background: #1084fd;
+    border-radius: 4rem;
+}
+.map-contact__logo {
+    margin-bottom: 25px;
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #c0dfff;
+}
+.map-contact__item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.map-contact__item-img {
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    background: #eef4fa;
+    border-radius: 10px;
+}
+.map-contact__item-img img{
+    width: 20px;
+}
+.map-contact__item-text {
+    font-weight: 500;
+    line-height: 1.4;
+}
+.map-contact__item-text span{
+    font-weight: 400;
+}
+
+
+
+

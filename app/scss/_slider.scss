@@ -19,3 +19,26 @@
 .full .slick-next{
     background: url('../images/slider-full-arrow-right.png') no-repeat;
 }
+
+
+//
+.parents .slick-prev,
+.parents .slick-next{
+    padding: 0;
+    font-size: 0;
+    border: none;
+}
+.parents .slick-prev,
+.parents .slick-next{
+    width: 60px;
+    height: 60px;  
+}
+.parents .slick-prev{
+    background: url('../images/parents-slider-arrow-left.png') no-repeat;
+}
+.parents .slick-next{
+    background: url('../images/parents-slider-arrow-right.png') no-repeat;
+}
+// .parents .slick-list{
+//     padding:0 5% 0 5%;
+// }

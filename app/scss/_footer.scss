@@ -44,6 +44,11 @@
     text-align: center;
     border: none;
     background: #eef4fa;
+    transition: all .4s ease-in;
+}
+.footer-block__item-btn:hover{
+    background: #ffb216;
+    transition: all .4s ease-in;
 }
 .footer-block__item-btn::after{
     position: absolute;

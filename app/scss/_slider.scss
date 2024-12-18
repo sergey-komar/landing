@@ -39,6 +39,15 @@
 .parents .slick-next{
     background: url('../images/parents-slider-arrow-right.png') no-repeat;
 }
-// .parents .slick-list{
-//     padding:0 5% 0 5%;
-// }
+.parents .slick-list{
+    padding:0 5% 0 5%;
+}
+.parents .slick-slide.slick-active{
+    opacity: 1;
+}
+.parents-slider__item-img img{
+    margin: 0 auto;
+}
+.parents .slick-slide{
+    opacity: .5;
+}

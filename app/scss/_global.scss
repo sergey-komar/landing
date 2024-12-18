@@ -50,6 +50,7 @@ button{
 	line-height: 72px;
 	font-weight: 500;
 	background: linear-gradient(210deg, #ffe03a 0%, #ffb216 100%);
+	background-size: 150%;
 }
 .btn-lend::after{
 	position: absolute;
@@ -59,4 +60,13 @@ button{
 	background: url('../images/btn-arrow.png') no-repeat;
 	right: 10px;
 	top: 17px;
+	transition: all .4s ease-in;
+}
+.btn-lend:hover{
+	background-position: 100%;
+}
+
+.btn-lend:hover.btn-lend::after{
+	background: url('../images/hover-btn-arrows.png') no-repeat;
+	transition: all .4s ease-in;
 }

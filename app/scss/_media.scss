@@ -61,7 +61,9 @@
     .good-block__item-title,
     .good-block__item-text,
     .questions-accardion__title,
-    .quick-block__item-text{
+    .quick-block__item-text,
+    .awaits-block__content-text,
+    .child-block__item-title{
         font-size: 16px;
         line-height: 1.4;
     }
@@ -103,6 +105,9 @@
     }
     .awaits-block__item-img img{
         width: 85%;
+    }
+    .quick{
+        padding: 10rem 0;
     }
 }
 

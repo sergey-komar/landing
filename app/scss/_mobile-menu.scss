@@ -81,10 +81,17 @@
         right: -80px;
     }
     .header-block__img{
-        width: 40%;
+        width: 35%;
     }
     .logo-lend{
         width: 200px;
+    }
+    .btn-lend{
+        height: 60px;
+        line-height: 60px;
+    }
+    .btn-lend::after{
+        top: 11px;
     }
 }
 
@@ -95,13 +102,8 @@
     .header-block::after{
         display: none;
     }
-    .btn-lend{
-        height: 60px;
-        line-height: 60px;
-    }
-    .btn-lend::after{
-        top: 11px;
-    }
+    
+    
 }
 
 
@@ -204,7 +206,7 @@
         top: 5px;
     }
     .header-block__content{
-        transform: translateY(35px);
+        transform: translateY(50px);
     }
     .header-block__content-title{
         margin-bottom: 30px;

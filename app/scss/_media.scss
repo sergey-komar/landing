@@ -60,7 +60,8 @@
     .full-slider__item-text,
     .good-block__item-title,
     .good-block__item-text,
-    .questions-accardion__title{
+    .questions-accardion__title,
+    .quick-block__item-text{
         font-size: 16px;
         line-height: 1.4;
     }
@@ -640,5 +641,8 @@
     .container{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+    .footer-block__item-phone, .footer-block__item-inst{
+        justify-content: center;
     }
 }

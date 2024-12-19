@@ -335,17 +335,17 @@
     overflow-x: hidden;
 }
 .awaits__title {
-    max-width: 120rem;
+    max-width: 95rem;
     margin-bottom: 10rem;
-    font-size: 13rem;
+    font-size: 10rem;
     line-height: 1.1;
     color: #2c3359;
 }
 .awaits__title span{
     display: inline-block;
     border-radius: 100px;
-    width: 330px;
-    height: 112px;
+    width: 280px;
+    height: 90px;
     background-color: #ffb216;
     transform: translateY(15px);
 }
@@ -362,7 +362,7 @@
     background: url('../images/icon/awaits-star.svg') no-repeat;
     background-position: center;
     background-size: contain;
-    top: 23%;
+    top: 18%;
     right: 0;
 }
 .awaits-block__item {
@@ -370,8 +370,11 @@
     margin-bottom: 8rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 12rem;
     z-index: 2;
+}
+.awaits-block__item-img{
+    width: 50%;
 }
 .awaits-block__content {
     max-width: 43rem;
@@ -484,7 +487,7 @@
     gap: 10px;
 }
 .family-box__title {
-    font-size: 12rem;
+    font-size: 10rem;
     font-weight: 700;
     line-height: 1.1;
     color: #2c3359;
@@ -545,12 +548,14 @@
     padding: 14rem 0;
     background: url('../images/good-bg.jpg') no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .good__title {
+    max-width: 90rem;
     position: relative;
     margin-bottom: 5rem;
-    font-size: 13rem;
+    font-size: 10rem;
     line-height: 1.1;
     font-weight: 700;
 }
@@ -561,8 +566,8 @@
     height: 170px;
     background: url('../images/icon/good-samolet.svg') no-repeat;
     background-position: center;
-    right: 0;
-    top: -180px;
+    right: -270px;
+    top: -140px;
 }
 .good-block {
     display: flex;
@@ -601,8 +606,9 @@
     background-size: cover;
 }
 .quick__title {
+    max-width: 90rem;
     margin-bottom: 35px;
-    font-size: 13rem;
+    font-size: 10rem;
     font-weight: 700;
     line-height: 1.1;
 }

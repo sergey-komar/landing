@@ -7,8 +7,8 @@
     .child-top__title,
     .awaits__title,
     .full__title,
-    .family-box__title,
-    .family__title span,
+    .family.family--land .family-box__title,
+    .family__title.family__title--land span,
     .good__title,
     .quick__title,
     .questions-top__title,
@@ -47,15 +47,16 @@
     .limited-block__text,
     .first-block__content-text,
     .full__top-text,
-    .family-block__text{
+    .family.family--land .family-block__text{
         font-size: 20px;
     }
     .first-block__img img,
-    .family-block__img img,
+    .family-block.family-block--land .family-block__img img,
     .questions-top__img img{
         width: 80%;
         margin: 0 auto;
     }
+
     .awaits-block__item-img{
         min-width: 60%;
     }
@@ -92,15 +93,15 @@
         margin-bottom: 10px;
     }
     .awaits__title span,
-    .family-box__title img{
+    .family.family--land .family-box__title img{
         display: none;
     }
     .awaits,
     .first,
-    .family{
+    .family.family--land{
         padding-top: 10rem;
     }
-    .family-box{
+    .family.family--land .family-box{
         margin-bottom: 20px;
     }
     .awaits::after{
@@ -143,8 +144,8 @@
        width: 32%;
     }
     .awaits__title,
-    .family-box__title,
-    .family__title span,
+    .family.family--land .family-box__title,
+    .family__title.family__title--land span,
     .good__title,
     .quick__title{
         font-size: 6.5rem;
@@ -235,8 +236,8 @@
     .child-top__title,
     .awaits__title,
     .full__title,
-    .family-box__title,
-    .family__title span,
+    .family.family--land .family-box__title,
+    .family__title.family__title--land span,
     .good__title,
     .quick__title,
     .questions-top__title,
@@ -259,10 +260,10 @@
     .awaits{
         padding-top: 50px;
     }
-    .family{
+    .family.family--land{
         padding-top: 60px;
     }
-    .family-block__img{
+    .family-block.family-block--land .family-block__img{
         margin-top: 65px;
     }
     .good{
@@ -384,8 +385,8 @@
     .child-top__title,
     .awaits__title,
     .full__title,
-    .family-box__title,
-    .family__title span,
+    .family.family--land .family-box__title,
+    .family__title.family__title--land span,
     .good__title,
     .quick__title,
     .questions-top__title,
@@ -417,7 +418,7 @@
     }
     .limited-block__title,
     .limited-block__text,
-    .family-box{
+    .family.family--land .family-box{
         margin-bottom: 20px;
     }
     .limited-block__bottom-link{
@@ -431,7 +432,7 @@
     }
     .limited-block__text,
     .full__top-text,
-    .family-block__text,
+    .family.family--land .family-block__text,
     .quick-box__text{
         font-size: 16px;
     }
@@ -497,14 +498,14 @@
     .parents-slider{
         margin-bottom: 30px;
     }
-    .family-box__img{
+    .family.family--land .family-box__img{
         display: none;
     }
-    .family{
+    .family.family--land{
         padding-top: 20px;
     }
-    .family-block,
-    .family-block__img{
+    .family-block.family-block--land,
+    .family-block.family-block--land .family-block__img{
         margin-top: 0;
     }
     .good-block__item,
@@ -634,6 +635,7 @@
         padding-right: 25px;
     }
     .parents{
+        margin-top: 0;
         padding: 40px 0;
     }
     .parents-box__text{
@@ -645,7 +647,7 @@
     }
     .awaits-block__item-img img,
     .first-block__img img,
-    .family-block__img img,
+    .family-block.family-block--land .family-block__img img,
     .questions-top__img img{
         width: 100%;
     }

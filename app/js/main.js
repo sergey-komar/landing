@@ -93,8 +93,11 @@ window.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('scroll', function() {
     const posTop = elem.getBoundingClientRect().top;
     
+    if(elem){
     // Блок достиг верхней границы экрана (или выше)
-     elem.classList.toggle('first-active', posTop <= 0);
+    elem.classList.toggle('first-active', posTop <= 0);
+      }
+    
     
     // Блок только появляется снизу (или выше)
     // elem.classList.toggle('visible', posTop < window.innerHeight);
@@ -106,11 +109,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const accardionBtn = document.querySelectorAll('.questions-accardion__btn');
 
-        accardionBtn.forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('btn-active');
-            })
+    if(accardionBtn){
+      accardionBtn.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('btn-active');
         })
+    })
+    }
+       
 
 
 
@@ -181,7 +187,7 @@ window.addEventListener('DOMContentLoaded', () => {
             //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
 
 
-            const menu = document.querySelector(".menu");
+            const menu = document.querySelector(".menu-lend");
             const mobile = document.querySelector(".nav-icon");
           
             if(mobile){
